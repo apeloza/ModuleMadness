@@ -10,6 +10,5 @@ var accountBal = function(){
     return accBalString;
   };
 
-var myFunctions = {randomUSD: randomUSD, accountBal:accountBal};
-module.exports = accountBal;
-module.exports = randomUSD;
+module.exports.randomUSD = randomUSD;
+module.exports.accountBal = accountBal;

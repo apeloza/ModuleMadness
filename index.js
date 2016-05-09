@@ -4,7 +4,8 @@ var convertUSD = require('./modules/moduletwo.js');
 var accountDisplay = require('./modules/modulethree.js');
 http.createServer(function(req, res) {
   res.writeHead(200);
-  console.log(accountDisplay.accountBal);
+  res.write(accountDisplay.accountBal());
+  res.write(accountDisplay.randomUSD());
   res.end();
 }).listen(3000);
 
